@@ -20,7 +20,7 @@ contract Collection is ERC721Enumerable, Ownable {
     string public baseExtension = ".json";
     uint256 cost = 0.2 ether;
     uint256 public maxSupply = 10000;
-    uint256 public maxMintAmount = 100;
+    uint256 public maxMintAmount = 50;
     bool public paused = false;
 
     constructor() ERC721("Betta NFTs", "BettaNFTs") {}
@@ -38,7 +38,7 @@ contract Collection is ERC721Enumerable, Ownable {
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
-    return "ipfs://bafybeigxlgclpvp3g7nkybf6fepdj3u5qmxvhdguxznunsojtsmxzibmvy/images/";
+    return "ipfs://bafybeihsdn5qnthntrsae36yjtcg3trywuaphn4mdr6duubikwbt2mqw2a/";
 
     }
     
